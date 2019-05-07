@@ -1,0 +1,17 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+</head>
+
+<body>
+    <h1>{{.Title}}</h1>
+    <p>{{range .Story}}
+        {{.}}
+        {{end}}
+    </p>
+    <ul>
+        {{range .Options}}
+        <li><a href="/{{.Chapter}}">{{.Text}}</a></li>
+        {{end}}
+    </ul>
+
+</body>
